@@ -5,7 +5,8 @@ import os
 # 🔐 Replace these with actual Telegram user IDs
 ALLOWED_USERS = [7296364795]  # Example: [123456789, 987654321]
 
-TOKEN = '8169067910:AAFKGcKiqZ5Q4VBg4e3YnMz7gzDxS7bFa_k'  # Replace with your actual token
+import os
+TOKEN = os.environ.get('TOKEN')
 
 # ✅ Start Command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
