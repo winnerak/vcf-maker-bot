@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: telegram-vcf-bot
+    env: python
+    buildCommand: ""
+    startCommand: python vcfmaker_bot.py
+    autoDeploy: true
